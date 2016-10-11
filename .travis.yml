@@ -1,6 +1,11 @@
 language: r
 cache: packages
 
+env:
+  global:
+    - GITHUB_REPO: "fbaffie/bookdown-demo"
+    - GITHUB_PAT
+
 before_script:
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
